@@ -79,6 +79,7 @@ section {
 .sec-head {
   font-weight: 500;
   font-size: 4rem;
+  margin-bottom: 8rem;
 }
 .svg-size-bg {
   width: 5.5rem;
@@ -99,6 +100,7 @@ section {
   border: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
+  cursor: pointer;
 }
 /* //////////////////////////////////////////// */
 /* Main CSS */
@@ -259,11 +261,20 @@ nav {
   background: #fff;
   padding: 2.5rem 4.5rem;
   margin: 2rem 0;
+  border-radius: 10px;
   position: relative;
 }
 .oc-btns {
   position: absolute;
   top: 0;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.btn-oc--active {
+  transform: rotate(-5deg);
+  border-bottom-left-radius: 0;
 }
 .btn-oc {
   margin: 0 0.8rem;
@@ -326,6 +337,6 @@ nav {
   align-self: center;
   margin-bottom: 1rem;
 }
-.occ p{
+.occ p {
   display: block;
 }
