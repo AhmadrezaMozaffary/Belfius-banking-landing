@@ -80,7 +80,26 @@ section {
   font-weight: 500;
   font-size: 4rem;
 }
-
+.svg-size-bg {
+  width: 5.5rem;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.svg-size {
+  width: 60%;
+  max-width: 60%;
+  height: 60%;
+  padding: 0.2rem;
+}
+.btn {
+  background: transparent;
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+}
 /* //////////////////////////////////////////// */
 /* Main CSS */
 /* //////////////////////////////////////////// */
@@ -186,7 +205,8 @@ nav {
 }
 
 /* Features */
-#features {
+#features,
+#operation {
   width: 100%;
   height: max-content;
   display: flex;
@@ -210,29 +230,102 @@ nav {
   width: 50%;
   margin-left: 5%;
 }
-.features-row .fr-inner .fr-icon {
-  width: 5.5rem;
-  height: 5.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.fr-svg-bg {
   background: var(--color-primary-opacity);
-  border-radius: 50%;
 }
-.features-row .fr-inner svg {
-  width: 60%;
-  max-width: 60%;
-  height: 60%;
+.fr-svg {
   fill: var(--color-primary);
-  padding: 0.2rem;
 }
 .features-row .fri-head {
   font-size: 2rem;
   margin: 1rem;
 }
-.features-row p {
+.features-row p,
+.occ p {
   color: #666;
   font-size: 1.7rem;
   width: 70%;
   font-weight: 300;
+}
+
+/* Operations */
+.operation-comp {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 2.5rem 4.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+.oc-btns {
+  position: absolute;
+  top: 0;
+}
+.btn-oc {
+  margin: 0 0.8rem;
+  margin-top: -5rem;
+  font-size: 1.45rem;
+  font-weight: bold;
+}
+.btn-oc span {
+  margin-right: 0.8rem;
+}
+.btn-oc1 {
+  background: var(--color-secondary);
+  color: #444;
+}
+.btn-oc2 {
+  background: var(--color-primary);
+  color: #444;
+}
+.btn-oc3 {
+  background: var(--color-tertiary);
+  color: #444;
+}
+.oc-contents {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.oc-content {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+  margin: 4rem;
+}
+.oc-svg-bg1 {
+  background: var(--color-secondary-opacity);
+}
+.oc-svg1 {
+  fill: var(--color-secondary-darker);
+}
+.oc-svg-bg2 {
+  background: var(--color-primary-opacity);
+}
+.oc-svg2 {
+  fill: var(--color-primary-darker);
+}
+.oc-svg-bg3 {
+  background: var(--color-tertiary-opacity);
+}
+.oc-svg3 {
+  fill: var(--color-tertiary-darker);
+}
+
+.oc-head {
+  font-size: 2.25rem;
+  font-weight: 500;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.occ p{
+  display: block;
 }
