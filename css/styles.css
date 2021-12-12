@@ -127,7 +127,6 @@ nav {
 .logo-img {
   width: 15rem;
 }
-
 .nav-menu {
   width: 60%;
   display: flex;
@@ -558,4 +557,75 @@ nav {
 }
 .footer-logo-container .logo-img {
   filter: drop-shadow(0 0 1px #fff);
+}
+
+/*/////////////////////////*/
+/*Adding Responsive Version*/
+/*/////////////////////////*/
+
+/* Mobile Version */
+@media screen and (max-width: 425px) {
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    height: max-content;
+  }
+  .logo {
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    margin: 0;
+  }
+  .logo-img {
+    width: 30%;
+  }
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-menu a {
+    margin: 0;
+  }
+  .nav-menu a:last-child {
+    margin-left: 0;
+  }
+
+  /* Showcase */
+  #show-case {
+    width: 100%;
+    height: calc(100vh - 9rem);
+    padding: 1rem;
+  }
+  .inner-show-case {
+    width: 90%;
+    height: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .left-show-case {
+    width: 100%;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .show-case-title {
+    font-size: 2.5rem;
+    line-height: initial;
+  }
+  .show-case-desc {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+  .right-show-case {
+    width: 90%;
+    height: 30%;
+    align-self: center;
+  }
+  .right-show-case-img {
+    width: 100%;
+    height: 110%;
+  }
 }
