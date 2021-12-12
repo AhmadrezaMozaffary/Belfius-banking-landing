@@ -8,6 +8,7 @@
   --color-primary-opacity: #5ec5763a;
   --color-secondary-opacity: #ffcd0331;
   --color-tertiary-opacity: #ff58602d;
+  --color-dark-bg: #37383e;
   --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
@@ -44,6 +45,7 @@ section {
 /* Utilities */
 .btn-primary {
   background: var(--color-primary) !important;
+  color: #444;
   padding: 0.7rem 1.5rem;
   text-shadow: 1px 1px 3px #fff;
   border-radius: 2rem;
@@ -101,6 +103,7 @@ section {
   padding: 1.5rem 3rem;
   border-radius: 2rem;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 /* //////////////////////////////////////////// */
 /* Main CSS */
@@ -149,7 +152,7 @@ nav {
 }
 
 /* ShowCase */
-.show-case {
+#show-case {
   width: 100%;
   height: calc(100vh - 9rem);
   display: flex;
@@ -478,4 +481,33 @@ nav {
 }
 .section__title--testimonials {
   margin-bottom: 4rem;
+}
+
+/* SignUp */
+#sign-up{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-dark-bg);
+}
+.sign-up{
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up .sec-head {
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.sign-up-btn-container > a{
+  font-size: 2.2rem;
+  font-weight: bold;
 }
