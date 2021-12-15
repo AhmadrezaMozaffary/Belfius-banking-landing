@@ -628,4 +628,39 @@ nav {
     width: 100%;
     height: 110%;
   }
+
+  /* Features */
+  #features {
+    padding: 5rem 3rem;
+  }
+  #features .sec-title .sec-head {
+    font-size: 2.4rem;
+    margin: 0;
+  }
+  .features-row {
+    width: 99%;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .features-row:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+  .features-row img {
+    width: 90%;
+    margin: 1.5rem 0;
+  }
+  .features-row .fr-inner {
+    width: 94%;
+    text-align: center;
+    margin: 0;
+  }
+  .features-row p {
+    width: 100%;
+  }
+  .fr-svg-bg {
+    background: unset;
+  }
+  .svg-size-bg {
+    width: unset;
+  }
 }
