@@ -757,4 +757,49 @@ nav {
   .dots {
     display: none;
   }
+
+  /* SignUp */
+  .sign-up {
+    width: 96%;
+    height: max-content;
+  }
+  .sign-up .sec-head {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .sign-up-btn-container > a {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  #footer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-dark-bg);
+    border-top: 1px solid #444;
+  }
+  .footer {
+    height: 96%;
+    margin: 2rem 0;
+  }
+  .footer--nav {
+    height: 50%;
+    flex-direction: column;
+  }
+  .footer--item {
+    margin: 0.3rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .footer-logo-container {
+    height: 20%;
+  }
+  .footer-logo-container .logo-img {
+    width: 60%;
+  }
 }
