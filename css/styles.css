@@ -805,7 +805,7 @@ nav {
 }
 
 /* Tablet Version */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   /* Navbar */
   nav {
     flex-direction: column;
