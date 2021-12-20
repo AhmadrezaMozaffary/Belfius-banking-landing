@@ -25,7 +25,7 @@
         <a href="#">Features</a>
         <a href="#">Operations</a>
         <a href="#">Testimonials</a>
-        <a href="#" class="btn-primary">Open account</a>
+        <a href="#" class="btn-primary open-acc">Open account</a>
         <a href="https://belfius-banking.netlify.app/" class="btn-secondary"
           >Login</a
         >
@@ -297,7 +297,9 @@
           today!
         </h3>
         <div class="sign-up-btn-container">
-          <a href="#" class="btn-primary btn">Open your free account today!</a>
+          <a href="#" class="btn-primary btn open-acc"
+            >Open your free account today!</a
+          >
         </div>
       </div>
     </section>
@@ -333,6 +335,43 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
+    <section id="modal-window" class="hidden">
+      <div class="modal">
+        <button class="close-btn">x</button>
+        <h5>
+          Open your bank account in just
+          <span class="custom-style">5 minutes</span>
+        </h5>
+        <div>
+          <form action="#">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              class="fist-name"
+              placeholder="Your name"
+            />
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              class="last-name"
+              placeholder="Your lastname"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="email-input"
+              placeholder="Email"
+            />
+            <button class="btn-primary" type="submit">Next step &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>

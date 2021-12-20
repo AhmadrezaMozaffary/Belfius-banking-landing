@@ -105,6 +105,10 @@ section {
   cursor: pointer;
   font-size: 1.5rem;
 }
+.hidden {
+  display: none !important;
+}
+
 /* //////////////////////////////////////////// */
 /* Main CSS */
 /* //////////////////////////////////////////// */
@@ -559,6 +563,116 @@ nav {
   filter: drop-shadow(0 0 1px #fff);
 }
 
+/* Modal Window */
+#modal-window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(143, 141, 141, 0.6);
+  z-index: 100;
+}
+.modal {
+  width: 35%;
+  height: 70%;
+  animation: open-modal 1.5s ease forwards;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+  border-radius: 40px 10px;
+  background: #fff;
+  box-shadow: 10px 10px 20px #444;
+}
+.modal h5 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  z-index: 0;
+}
+.modal div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal div form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal div form label {
+  font-size: 2rem;
+}
+.modal div form input {
+  display: block;
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  background: rgba(146, 144, 144, 0.151);
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.modal div form input:focus {
+  animation: form-input 0.5s ease forwards;
+}
+.modal div .btn-primary {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+}
+.close-btn {
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+}
+.close-btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+@keyframes form-input {
+  0% {
+    border-radius: 100%;
+  }
+  100% {
+    border-radius: 0;
+    padding: 4% 8%;
+    font-size: 2rem;
+  }
+}
+@keyframes open-modal {
+  0% {
+    top: -50%;
+    left: 150%;
+  }
+  100% {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /*/////////////////////////*/
 /*Adding Responsive Version*/
 /*/////////////////////////*/
@@ -802,6 +916,29 @@ nav {
   .footer-logo-container .logo-img {
     width: 60%;
   }
+
+  /* Modal Window */
+  .modal {
+    width: 85%;
+    height: 65%;
+  }
+  .modal h5 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0 0;
+  }
+  .modal div form label {
+    font-size: 1.8rem;
+  }
+  .modal div form input {
+    margin-bottom: 1rem;
+    padding: 5px 10px;
+  }
+  .modal div .btn-primary {
+    width: 75%;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
 
 /* Tablet Version */
@@ -927,5 +1064,15 @@ nav {
   .footer--item {
     font-size: 1.2rem;
     font-weight: bold;
+  }
+
+  /* Modal Window */
+  .modal {
+    width: 75%;
+    height: 80%;
+  }
+  .modal h5 {
+    font-size: 3rem;
+    margin: 2.5rem 0 1rem 0;
   }
 }
