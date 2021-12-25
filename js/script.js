@@ -32,6 +32,9 @@ const toggleHamburger = function () {
   hamburgerTopLine.classList.toggle("rotate-top-line");
   hamburgerBottomLine.classList.toggle("rotate-bottom-line");
 };
+const toggleMargin = function () {
+  hamburgerLines.forEach((line) => line.classList.toggle("margin-changing"));
+};
 const navMenuDisplay = function (displayType) {
   navMenu.style.display = displayType;
 };
@@ -39,10 +42,11 @@ const navMenuDisplay = function (displayType) {
 HamburgerMenu.addEventListener("click", () => {
   if (hamburgerMiddleLine.classList.contains("hidden")) {
     toggleHamburger();
+    toggleMargin();
     navMenuDisplay("none");
   } else {
     toggleHamburger();
-    hamburgerLines.forEach((line) => line.classList.toggle("margin-changing"));
+    toggleMargin();
     navMenuDisplay("flex");
   }
 });
