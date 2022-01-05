@@ -50,3 +50,6 @@ HamburgerMenu.addEventListener("click", () => {
     navMenuDisplay("flex");
   }
 });
+
+
+// Adding smooth scrolling

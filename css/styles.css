@@ -246,8 +246,8 @@ nav {
 }
 
 /* Features */
-#features,
-#operation {
+.features,
+.operation {
   width: 100%;
   height: max-content;
   display: flex;
@@ -380,7 +380,7 @@ nav {
 }
 
 /* Testimonials & Slider */
-#testimonial .sec-title {
+.testimonial .sec-title {
   width: 100%;
   height: 100%;
   display: flex;
@@ -388,7 +388,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
-#testimonial .sec-desc {
+.testimonial .sec-desc {
   align-self: flex-start;
   margin-left: 15%;
 }
@@ -470,7 +470,7 @@ nav {
 
 /* TESTIMONIALS */
 .testimonial {
-  width: 65%;
+  width: 100%;
   position: relative;
 }
 .testimonial::before {
@@ -783,9 +783,9 @@ nav {
   }
 
   /* Features */
-  #features,
-  #operation,
-  #testimonial {
+  .features,
+  .operation,
+  .testimonial {
     padding: 5rem 3rem;
   }
   .sec-head {
@@ -820,7 +820,7 @@ nav {
   }
 
   /* Operations */
-  #operation .sec-title {
+  .operation .sec-title {
     margin-bottom: 8rem;
   }
   .operation-comp {
@@ -865,7 +865,7 @@ nav {
     width: 98%;
   }
   /* Testimonials */
-  #testimonial .sec-desc {
+  .testimonial .sec-desc {
     margin: 0;
   }
   .slider {
@@ -880,20 +880,22 @@ nav {
     height: max-content;
   }
   .testimonial::before {
-    font-size: 115rem;
+    font-size: 100rem;
     opacity: 0.2;
     font-family: Arial, Helvetica, sans-serif;
   }
   .testimonial__header {
-    margin: 2.5rem 0 0 0;
+    margin: 4.5rem 0;
     font-size: 1.5rem;
   }
   .testimonial__text {
     font-size: 1.5rem;
-    margin: 0;
-    width: 99%;
+    margin: 0.5rem;
+    padding: 0;
+    width: 100%;
     text-align: center;
-    height: max-content;
+    height: 90%;
+    overflow-y: hidden;
   }
   .testimonial__author {
     display: flex;
@@ -901,7 +903,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
   }
   .testimonial__name {
     align-self: unset;
@@ -1052,10 +1054,10 @@ nav {
   }
 
   /* Operations */
-  #operation {
+  .operation {
     padding: 5rem 3rem;
   }
-  #operation .sec-title {
+  .operation .sec-title {
     margin-bottom: 8rem;
   }
   .operation-comp {
