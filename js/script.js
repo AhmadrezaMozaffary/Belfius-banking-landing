@@ -53,3 +53,10 @@ HamburgerMenu.addEventListener("click", () => {
 
 
 // Adding smooth scrolling
+navMenu.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (event.target.classList.contains("nav-link")) {
+    const hrefAsID = event.target.getAttribute("href");
+    document.querySelector(hrefAsID).scrollIntoView({ behavior: "smooth" });
+  }
+});
