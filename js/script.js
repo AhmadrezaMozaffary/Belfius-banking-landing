@@ -51,7 +51,6 @@ HamburgerMenu.addEventListener("click", () => {
   }
 });
 
-
 // Adding smooth scrolling
 navMenu.addEventListener("click", (event) => {
   event.preventDefault();
@@ -59,4 +58,30 @@ navMenu.addEventListener("click", (event) => {
     const hrefAsID = event.target.getAttribute("href");
     document.querySelector(hrefAsID).scrollIntoView({ behavior: "smooth" });
   }
+});
+
+// Adding tabbed component
+const tabs = document.querySelectorAll(".btn-oc");
+const tabsContainer = document.querySelector(".oc-btns");
+const tabsContent = document.querySelectorAll(".oc-content");
+
+tabsContainer.addEventListener("click", (event) => {
+  const clicked = event.target.closest(".btn-oc");
+
+  if (!clicked) return; // When clicked is not btn
+
+  // Removing Active classes
+  tabs.forEach((tab) => tab.classList.remove("btn-oc--active"));
+  tabsContent.forEach((content) =>
+    content.classList.remove("oc-content--active")
+  );
+
+  // Activate the clicked tab
+  clicked.classList.add("btn-oc--active");
+
+  console.log(clicked.dataset.tab);
+  // Activate the content that related to clicked btn
+  document
+    .querySelector(`.oc-content--${clicked.dataset.tab}`)
+    .classList.add("oc-content--active");
 });

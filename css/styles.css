@@ -314,6 +314,7 @@ nav {
 .btn-oc--active {
   transform: rotate(-5deg);
   border-bottom-left-radius: 0;
+  transition: all .2s ease;
 }
 .btn-oc {
   margin: 0 0.8rem;
@@ -345,11 +346,14 @@ nav {
   align-items: center;
 }
 .oc-content {
-  display: grid;
+  display: none;
   grid-template-columns: 7rem 1fr;
   column-gap: 3rem;
   row-gap: 0.5rem;
   margin: 4rem;
+}
+.oc-content--active{
+  display: grid !important;
 }
 .oc-svg-bg1 {
   background: var(--color-secondary-opacity);
@@ -848,7 +852,7 @@ nav {
     width: 98%;
   }
   .oc-content {
-    display: block;
+    display: none;
     margin: 0;
     text-align: center;
     padding: 1.7rem;
@@ -1084,7 +1088,7 @@ nav {
     width: 98%;
   }
   .oc-content {
-    display: block;
+    display: none;
     margin: 0;
     text-align: center;
     padding: 1.7rem;
