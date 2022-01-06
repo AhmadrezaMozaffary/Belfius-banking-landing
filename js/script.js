@@ -85,3 +85,20 @@ tabsContainer.addEventListener("click", (event) => {
     .querySelector(`.oc-content--${clicked.dataset.tab}`)
     .classList.add("oc-content--active");
 });
+
+// Adding mouse over/out menu bar (Passing argument to EventListener)
+
+const handleHover = function (event) {
+  if (event.target.classList.contains("nav-link")) {
+    const navLink = event.target;
+    const navLinkSiblings = navLink
+      .closest(".nav-menu")
+      .querySelectorAll(".nav-link");
+    navLinkSiblings.forEach((sibling) => {
+      if (sibling !== navLink) sibling.style.opacity = this;
+    });
+  }
+};
+
+navMenu.addEventListener("mouseover", handleHover.bind(0.3));
+navMenu.addEventListener("mouseout", handleHover.bind(1));
