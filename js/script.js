@@ -102,3 +102,25 @@ const handleHover = function (event) {
 
 navMenu.addEventListener("mouseover", handleHover.bind(0.3));
 navMenu.addEventListener("mouseout", handleHover.bind(1));
+
+// Sticky navbar menu when first section reaches
+const showCase = document.querySelector("#show-case");
+const navMenuContainer = document.querySelector("nav");
+const navbarHeight = navMenuContainer.getBoundingClientRect().height;
+showCase.style.paddingBottom = "";
+
+const stickyNavbar = (entries) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) navMenuContainer.classList.add("sticky");
+  else navMenuContainer.classList.remove("sticky");
+};
+
+const showCaseOption = {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navbarHeight}px`,
+};
+
+const showCaseObserver = new IntersectionObserver(stickyNavbar, showCaseOption);
+
+showCaseObserver.observe(showCase);

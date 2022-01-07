@@ -314,7 +314,7 @@ nav {
 .btn-oc--active {
   transform: rotate(-5deg);
   border-bottom-left-radius: 0;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 .btn-oc {
   margin: 0 0.8rem;
@@ -352,7 +352,7 @@ nav {
   row-gap: 0.5rem;
   margin: 4rem;
 }
-.oc-content--active{
+.oc-content--active {
   display: grid !important;
 }
 .oc-svg-bg1 {
