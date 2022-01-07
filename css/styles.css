@@ -109,6 +109,11 @@ section {
   display: none !important;
 }
 
+.sec-hidden {
+  opacity: 0 !important;
+  transform: translateY(8rem) !important;
+}
+
 /* //////////////////////////////////////////// */
 /* Main CSS */
 /* //////////////////////////////////////////// */

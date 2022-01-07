@@ -124,3 +124,19 @@ const showCaseOption = {
 const showCaseObserver = new IntersectionObserver(stickyNavbar, showCaseOption);
 
 showCaseObserver.observe(showCase);
+
+// Revealing Elements
+const allSections = document.querySelectorAll(".section");
+console.log(allSections);
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("sec-hidden");
+  sectionObserver.unobserve(entry.target);
+};
+const revealOptions = { root: null, threshold: 0.15 };
+const sectionObserver = new IntersectionObserver(revealSection, revealOptions);
+allSections.forEach((sec) => {
+  sectionObserver.observe(sec);
+  sec.classList.add("sec-hidden");
+});
