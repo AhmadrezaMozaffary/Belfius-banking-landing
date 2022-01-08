@@ -127,7 +127,6 @@ showCaseObserver.observe(showCase);
 
 // Revealing Elements
 const allSections = document.querySelectorAll(".section");
-console.log(allSections);
 const revealSection = (entries, observer) => {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
@@ -140,3 +139,24 @@ allSections.forEach((sec) => {
   sectionObserver.observe(sec);
   sec.classList.add("sec-hidden");
 });
+
+// Lazyloading in feature imgs
+const imgTargets = document.querySelectorAll("img[data-src]");
+
+const lazyImg = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener("load", () => {
+    entry.target.classList.remove("img-lazy-blur");
+  });
+
+  imgObserver.unobserve(entry.target);
+};
+
+const lazyImgOpt = { root: null, threshold: 0, rootMargin: "200px" };
+
+const imgObserver = new IntersectionObserver(lazyImg, lazyImgOpt);
+
+imgTargets.forEach((img) => imgObserver.observe(img));

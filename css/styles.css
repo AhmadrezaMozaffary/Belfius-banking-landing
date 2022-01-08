@@ -114,6 +114,10 @@ section {
   transform: translateY(8rem) !important;
 }
 
+.img-lazy-blur{
+  filter: blur(15px);
+}
+
 /* //////////////////////////////////////////// */
 /* Main CSS */
 /* //////////////////////////////////////////// */
