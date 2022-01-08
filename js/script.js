@@ -79,7 +79,6 @@ tabsContainer.addEventListener("click", (event) => {
   // Activate the clicked tab
   clicked.classList.add("btn-oc--active");
 
-  console.log(clicked.dataset.tab);
   // Activate the content that related to clicked btn
   document
     .querySelector(`.oc-content--${clicked.dataset.tab}`)
