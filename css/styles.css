@@ -1004,6 +1004,11 @@ nav {
       transform: translateY(0%);
     }
   }
+
+  .modal-lable {
+    display: none;
+  }
+
 }
 
 /* Tablet Version */

@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Belfius Banking</title>
   </head>
   <body>
@@ -355,28 +361,30 @@
     <!-- Modal Window -->
     <section id="modal-window" class="hidden">
       <div class="modal">
-        <button class="close-btn">x</button>
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
         <h5>
           Open your bank account in just
           <span class="custom-style">5 minutes</span>
         </h5>
         <div>
           <form action="#">
-            <label for="first-name">First Name</label>
+            <label for="first-name" class="modal-lable">First Name</label>
             <input
               type="text"
               name="first-name"
               class="fist-name"
               placeholder="Your name"
             />
-            <label for="last-name">Last Name</label>
+            <label for="last-name" class="modal-lable">Last Name</label>
             <input
               type="text"
               name="last-name"
               class="last-name"
               placeholder="Your lastname"
             />
-            <label for="email">Email</label>
+            <label for="email" class="modal-lable">Email</label>
             <input
               type="email"
               name="email"
