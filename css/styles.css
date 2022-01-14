@@ -973,7 +973,7 @@ nav {
   /* Modal Window */
   .modal {
     width: 94%;
-    height: 65%;
+    height: 70vh;
   }
   .modal h5 {
     width: 80%;
@@ -990,7 +990,7 @@ nav {
   }
   .modal div .btn-primary {
     width: 60%;
-    margin: 1rem auto;
+    margin: 5rem auto 1rem auto;
     font-size: 1.5rem;
     cursor: pointer;
   }
