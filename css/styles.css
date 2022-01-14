@@ -971,18 +971,18 @@ nav {
   }
 
   /* Modal Window */
-  #modal-window{
+  #modal-window {
     display: block;
   }
   .modal {
-    width: 94%;
-    height: 70vh;
+    width: 80%;
+    height: 40vh;
     margin: 0 auto;
   }
   .modal h5 {
     width: 80%;
     height: 10%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 1.5rem 0 0 0;
   }
   .modal-lable {
@@ -990,7 +990,7 @@ nav {
   }
   .modal div form {
     height: 60%;
-    margin: 1rem auto;
+    margin: 4rem auto 0 auto;
   }
   .modal div form input {
     margin-bottom: 1rem;
@@ -998,9 +998,12 @@ nav {
   }
   .modal div .btn-primary {
     width: 60%;
-    margin: 5rem auto 1rem auto;
-    font-size: 1.5rem;
+    margin: 0rem auto 1rem auto;
+    font-size: 1rem;
     cursor: pointer;
+  }
+  .modal div form input:focus {
+    animation: unset;
   }
 
   /* Animation */
