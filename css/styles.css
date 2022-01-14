@@ -980,25 +980,26 @@ nav {
     margin: 0 auto;
   }
   .modal h5 {
-    width: 80%;
+    width: 60%;
     height: 10%;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin: 1.5rem 0 0 0;
   }
   .modal-lable {
     display: none;
   }
   .modal div form {
-    height: 60%;
-    margin: 4rem auto 0 auto;
+    height: 50%;
+    margin: 3.5rem auto;
   }
   .modal div form input {
-    margin-bottom: 1rem;
-    padding: 5px 10px;
+    margin-bottom: .5rem;
+    padding: 1px 5px; 
+    font-size: 1.2rem;
   }
   .modal div .btn-primary {
     width: 60%;
-    margin: 0rem auto 1rem auto;
+    margin: 1rem auto 1rem auto;
     font-size: 1rem;
     cursor: pointer;
   }
