@@ -971,9 +971,13 @@ nav {
   }
 
   /* Modal Window */
+  #modal-window{
+    display: block;
+  }
   .modal {
     width: 94%;
     height: 70vh;
+    margin: 0 auto;
   }
   .modal h5 {
     width: 80%;
@@ -983,6 +987,10 @@ nav {
   }
   .modal-lable {
     display: none;
+  }
+  .modal div form {
+    height: 60%;
+    margin: 1rem auto;
   }
   .modal div form input {
     margin-bottom: 1rem;
