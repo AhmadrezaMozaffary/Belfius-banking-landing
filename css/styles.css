@@ -972,23 +972,25 @@ nav {
 
   /* Modal Window */
   .modal {
-    width: 85%;
+    width: 94%;
     height: 65%;
   }
   .modal h5 {
+    width: 80%;
+    height: 10%;
     font-size: 1.8rem;
     margin: 1.5rem 0 0 0;
   }
-  .modal div form label {
-    font-size: 1.8rem;
+  .modal-lable {
+    display: none;
   }
   .modal div form input {
     margin-bottom: 1rem;
     padding: 5px 10px;
   }
   .modal div .btn-primary {
-    width: 75%;
-    margin: 1.5rem auto;
+    width: 60%;
+    margin: 1rem auto;
     font-size: 1.5rem;
     cursor: pointer;
   }
@@ -1004,11 +1006,6 @@ nav {
       transform: translateY(0%);
     }
   }
-
-  .modal-lable {
-    display: none;
-  }
-
 }
 
 /* Tablet Version */
