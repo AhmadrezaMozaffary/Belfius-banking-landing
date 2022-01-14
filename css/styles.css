@@ -976,13 +976,13 @@ nav {
   }
   .modal {
     width: 80%;
-    height: 40vh;
+    height: 60%;
     margin: 0 auto;
   }
   .modal h5 {
     width: 60%;
     height: 10%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 1.5rem 0 0 0;
   }
   .modal-lable {
@@ -993,8 +993,8 @@ nav {
     margin: 3.5rem auto;
   }
   .modal div form input {
-    margin-bottom: .5rem;
-    padding: 1px 5px; 
+    margin-bottom: 0.5rem;
+    padding: 1px 5px;
     font-size: 1.2rem;
   }
   .modal div .btn-primary {
