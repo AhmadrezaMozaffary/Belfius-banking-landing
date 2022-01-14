@@ -15,7 +15,7 @@ const openModal = function (e) {
   modalWindow.classList.remove("hidden");
 };
 const closeModal = function (e) {
-  e.preventDefault();
+  e && e.preventDefault();
   modalWindow.classList.add("hidden");
 };
 
@@ -24,6 +24,17 @@ openAccBtns.forEach((btn) => {
 });
 
 closeModalBtn.addEventListener("click", closeModal);
+
+document.addEventListener("click", (event) => {
+  if (event.target == modalWindow) {
+    closeModal(event);
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key == "Escape") {
+    closeModal(event);
+  }
+});
 
 // Humberger Menu functionality
 const toggleHamburger = function () {
